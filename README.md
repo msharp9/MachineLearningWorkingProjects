@@ -1,0 +1,1 @@
+This repository is used to demonstrate my skills aquired in the field of Machine Learning or Computer Vision.  Since most of my projects are work based and can't be shared.
