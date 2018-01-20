@@ -1,7 +1,3 @@
-import os
-# os.environ["https_proxy"] = 'https://proxy.lehi.micron.com:8080'
-# os.environ["http_proxy"] = 'http://proxy.lehi.micron.com:8080'
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -70,7 +66,7 @@ def main():
     # It will also create extra white space
     # subprocess.call('convert -density 72 table.html imagemacick.png', shell=True)
 
-    
+
 
 # Only run example code if specifically running this code, other wise makes checkerboard_table available
 if __name__ == '__main__':
