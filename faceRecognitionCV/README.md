@@ -1,0 +1,3 @@
+I enjoyed Adrian's blogpost this week https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/ and decided to add video capture for demonstrations.  The code takes advantage of OpenCV 3.3s deep learning module which now ships with an improved facial recognition over the Haar cascade (which is what I have used in other projects).  The model is difficult to find, which is why there's a blog post.  It appears to do quite well for edge cases and side views, unlike Haar cascade.
+
+Since it wasn't in the blog post, you can find the caffemodel here: https://github.com/opencv/opencv_3rdparty/tree/dnn_samples_face_detector_20170830 (too big to upload)
