@@ -105,32 +105,34 @@ def initial_population():
     print(Counter(accepted_scores))
 
     return training_data
-#
-#def neural_network_model(input_size):
-#
-#     network = input_data(shape=[None, input_size, 1], name='input')
-#
-#     network = fully_connected(network, 128, activation='relu')
-#     network = dropout(network, 0.8)
-#
-#     network = fully_connected(network, 256, activation='relu')
-#     network = dropout(network, 0.8)
-#
-#     network = fully_connected(network, 512, activation='relu')
-#     network = dropout(network, 0.8)
-#
-#     network = fully_connected(network, 256, activation='relu')
-#     network = dropout(network, 0.8)
-#
-#     network = fully_connected(network, 128, activation='relu')
-#     network = dropout(network, 0.8)
-#
-#     network = fully_connected(network, 2, activation='softmax')
-#     network = regression(network, optimizer='adam', learning_rate=LR, loss='categorical_crossentropy', name='targets')
-#     model = tflearn.DNN(network, tensorboard_dir='log')
-#
-#     return model
-#
+
+# Just a simple multilayer perceptron model from tflearn
+# input size would be 4 since there are four observations every action
+def neural_network_model(input_size):
+    network = input_data(shape=[None, input_size, 1], name='input')
+
+    network = fully_connected(network, 128, activation='relu')
+    network = dropout(network, 0.8)
+
+    network = fully_connected(network, 256, activation='relu')
+    network = dropout(network, 0.8)
+
+    network = fully_connected(network, 512, activation='relu')
+    network = dropout(network, 0.8)
+
+    network = fully_connected(network, 256, activation='relu')
+    network = dropout(network, 0.8)
+
+    network = fully_connected(network, 128, activation='relu')
+    network = dropout(network, 0.8)
+
+    # 2 is for left or right - since we are trying to predict which action should be taken from the observations
+    network = fully_connected(network, 2, activation='softmax')
+    network = regression(network, optimizer='adam', learning_rate=LR, loss='categorical_crossentropy', name='targets')
+    model = tflearn.DNN(network, tensorboard_dir='log')
+
+    return model
+
 #
 # def train_model(training_data, model=False):
 #
