@@ -1,1 +1,1 @@
-This repository is used to demonstrate my skills aquired in the field of Machine Learning or Computer Vision.  Since most of my projects are work based and can't be shared.
+This repository is a collection of tutorials/projects/ect. in the field of Machine Learning or Computer Vision.  As well as being a reference for things I've learned, I hope it will also help demonstrate a few of my skills since most of my projects are work based and can't be shared.
