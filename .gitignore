@@ -1,4 +1,4 @@
 transferlearning_finetuningexample/flowers17.model
 __pycache__
 alexnet/output/alexnet_dogs_vs_cats.model
-CartPole/output/saved.npy
+CartPole/output/*
